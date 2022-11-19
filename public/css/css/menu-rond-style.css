@@ -1,0 +1,128 @@
+.menu-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100000000000000000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  color: white;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  border-radius: 2rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  top: 10px;
+  left: 10px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.menu-panier {
+  top: calc(70px + 60px) !important;
+}
+
+.menu-inscription {
+  top: calc(70px + 120px) !important;
+}
+
+.menu-connexion {
+  top: calc(70px + 180px) !important;
+}
+
+.menu-smart {
+  top: calc(70px + 240px) !important;
+}
+
+.menu-pc {
+  top: calc(70px + 300px) !important;
+}
+
+.menu-apropos {
+  top: calc(70px + 360px) !important;
+}
+
+.menu-acceuil, .menu-panier, .menu-inscription, .menu-connexion, .menu-smart, .menu-pc, .menu-apropos {
+  pointer-events: none;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000000000000000000000000;
+  top: 70px;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.menu-acceuil .menu-acceuil-r, .menu-panier .menu-acceuil-r, .menu-inscription .menu-acceuil-r, .menu-connexion .menu-acceuil-r, .menu-smart .menu-acceuil-r, .menu-pc .menu-acceuil-r, .menu-apropos .menu-acceuil-r {
+  pointer-events: all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: #d40000;
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  border-radius: 2rem;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1000000000000000000000000;
+  padding: 0.9rem;
+}
+
+.menu-acceuil .menu-acceuil-text, .menu-panier .menu-acceuil-text, .menu-inscription .menu-acceuil-text, .menu-connexion .menu-acceuil-text, .menu-smart .menu-acceuil-text, .menu-pc .menu-acceuil-text, .menu-apropos .menu-acceuil-text {
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  direction: rtl;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  height: 35px;
+  background-color: red;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+  z-index: -1;
+  font-weight: 700;
+  color: white;
+}

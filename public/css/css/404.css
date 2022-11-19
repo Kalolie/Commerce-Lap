@@ -1,0 +1,15 @@
+.for_title {
+  font-size: 10rem;
+  font-weight: 800;
+}
+
+.for_title .crimson {
+  color: crimson;
+}
+
+.for_title .for_small {
+  padding-left: 1rem;
+  border-left: solid 2px black;
+  font-size: 0.7rem;
+  font-weight: 600;
+}

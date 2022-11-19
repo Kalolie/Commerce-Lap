@@ -1,0 +1,68 @@
+.header {
+    width: 100%;
+    padding: 2rem;
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    background-color: black;
+
+    .header-title {
+        text-align: center;
+        font : {
+            size: 3rem;
+            weight: 700;
+        }
+
+        color : white;
+
+    }
+
+    .header-text {
+        text-align: center;
+        font : {
+            size: 0.9rem;
+        }
+
+        color : white;
+    }
+
+
+
+    .first-svg,.two-svg,.three-svg{
+        width: 100%;
+        height: 40vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: contrast(1.2);
+    }
+    .first-svg{
+        background-image: url("../../svg or png/Security/Security.svg");
+
+    }
+    .two-svg{
+        background-image: url("../../svg or png/Welcome/Welcome.svg");
+        
+    }
+    .three-svg{
+        background-image: url("../../svg or png/Setting/Setting.svg");
+    }
+
+
+
+}
+.title{
+    font-weight: 700;
+    font-variant: small-caps;
+}
+.card-custom{
+    padding: 2rem;
+}
+.form-custom{
+    padding: 1rem;
+    &::placeholder{
+        font-weight: 700;
+        color:gray;
+    }
+}

@@ -1,0 +1,151 @@
+:root {
+  --background_panier_info: dodgerblue;
+}
+
+.panier_info {
+  width: 100%;
+  height: calc(100% - 10px);
+  -webkit-box-shadow: 0.05rem 0.05rem 0.7rem 0px rgba(0, 0, 0, 0.281);
+          box-shadow: 0.05rem 0.05rem 0.7rem 0px rgba(0, 0, 0, 0.281);
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.panier_info .panier_info_tile {
+  font-size: 1rem;
+  font-weight: 800;
+  color: black;
+}
+
+.panier_info .button_pay {
+  width: 100%;
+  padding: 1rem;
+  background-color: dodgerblue;
+  text-align: center;
+  color: white;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.products_panier_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  grid-gap: 0.5rem;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .products_panier_container {
+    -ms-grid-columns: (100%)[1];
+        grid-template-columns: repeat(1, 100%);
+  }
+}
+
+.products_panier_container .product_panier {
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0.05rem 0.05rem 0.7rem 0px rgba(0, 0, 0, 0.281);
+          box-shadow: 0.05rem 0.05rem 0.7rem 0px rgba(0, 0, 0, 0.281);
+}
+
+.products_panier_container .product_panier .del-btn {
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20px;
+  border-radius: 5rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+  color: white;
+  background-color: gray;
+  margin-left: 0.2rem;
+  cursor: pointer;
+  -webkit-box-shadow: 0.05rem 0.05rem 0.7rem 0px #00000048;
+          box-shadow: 0.05rem 0.05rem 0.7rem 0px #00000048;
+}
+
+@media screen and (max-width: 700px) {
+  .products_panier_container .product_panier {
+    margin-bottom: 1rem;
+  }
+}
+
+.products_panier_container .product_panier .product_panier_img_card {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.products_panier_container .product_panier .product_panier_img_card .product_panier_img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../../admin/product/laptop/6398119_sd.jpg");
+}
+
+.products_panier_container .product_panier .product_panier_img_card .product_panier_img:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.products_panier_container .product_panier .product_panier_info {
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.products_panier_container .product_panier .product_panier_info .product_panier_name {
+  font-weight: 700;
+}
+
+.products_panier_container .product_panier .product_panier_info .product_panier_price {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: crimson;
+}
+
+.products_panier_container .product_panier .product_panier_info .product_panier_add {
+  background-color: crimson;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}

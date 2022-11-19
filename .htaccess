@@ -1,0 +1,2 @@
+# Page d'erreur 
+ErrorDocument 404 /error/404.php

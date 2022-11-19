@@ -1,0 +1,46 @@
+.footer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 4rem;
+
+    margin-top: 10rem;
+    background-color: black;
+
+    .footer-title {
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .divider-line {
+
+        border-bottom: 3px white dashed;
+        width: 100%;
+        height: 5rem;
+
+    }
+
+    ul li{
+        color : white ; 
+        list-style: none;
+        font-size: 0.8rem;
+    }
+    .footer-bottom{
+        color : white;
+        text-align : center;
+        font-size: 0.8rem;
+        font-weight: 700;
+
+    }
+}
+.link{
+    color:white;
+    text-decoration:none;
+    
+    &:hover{
+        color: wheat;
+    }
+}
+// .link:hover{
+//     color:wheat;
+// }

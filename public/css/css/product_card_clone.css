@@ -1,0 +1,130 @@
+@import url("../css/font-import.css");
+:root {
+  --red_color:crimson;
+  --page_color:whitesmoke;
+  --btncard_color:white;
+  --color_product_card_text:  black;
+  --color_price_text:black;
+}
+
+.product_card_clone {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.product_card_clone:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0.02rem 0.02rem 0.9rem 1px #b9b9b9;
+          box-shadow: 0.02rem 0.02rem 0.9rem 1px #b9b9b9;
+}
+
+@media screen and (max-width: 767px) {
+  .product_card_clone {
+    width: 100%;
+  }
+}
+
+.product_card_clone .product_img_card_clone {
+  width: 100%;
+  height: 150px;
+  padding: 1.5rem;
+  background-color: white;
+}
+
+.product_card_clone .product_img_card_clone .product_img_clone {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../admin/product/laptop img/6398115_sd.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product_card_clone .product_text_clone {
+  padding: 1rem;
+}
+
+.product_card_clone .product_text_clone .product_name_clone {
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 550;
+  font-family: "Roboto Light";
+}
+
+.product_card_clone .product_text_clone .product_price_clone {
+  color: crimson;
+  font-size: 0.7rem;
+  font-family: "Roboto Light";
+}
+
+.product_card_clone .product_btn_buy_clone {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--btncard_color);
+  text-align: center;
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+  font-size: 0.7rem;
+  margin-top: 2rem;
+  border: solid whitesmoke 1px;
+}
+
+.product_card_clone .product_btn_buy_clone:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: solid crimson 1px;
+  color: crimson;
+}
+
+.item_content_clone {
+  width: 100%;
+}
+
+.product_info_plus_clone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  padding: 0.5rem;
+  border-radius: 10rem;
+  -webkit-box-shadow: 0.05rem 0.05rem 0.7rem 0px #00000048;
+          box-shadow: 0.05rem 0.05rem 0.7rem 0px #00000048;
+  background-color: dodgerblue;
+  z-index: 10000000000000;
+}
+
+.card_grid_products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+  grid-gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 767px) {
+  .card_grid_products {
+    -ms-grid-columns: (48%)[2];
+        grid-template-columns: repeat(2, 48%);
+  }
+}
